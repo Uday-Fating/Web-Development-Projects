@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&family=Roboto:wght@100;300;400;700&display=swap');
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav{
+    max-width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    padding: 15px;
+    height: 20%;
+}
+.head{
+    display: flex;
+    align-items: center;
+}
+h1 img{
+    height: 30px;
+}
+
+ul{
+    display: flex;
+    justify-content: space-around;
+}
+ul li{
+    list-style: none;
+    padding: 0 25px;
+    font-size: 20px;
+    
+}
+
+ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+ul li a:hover{
+    color: grey;
+}
+
+main{
+    min-height: 71vh;
+}
+
+.btn{
+    background: black;
+    border: none;
+    color: white;
+    padding: 9px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#rsultcont div::first-letter{
+    text-transform: uppercase;
+}
+.container,.resultcont{
+    max-width: 80vw;
+    margin: auto;
+    padding: 15px;
+}
+
+#email{
+    padding: 5px;
+    border: 2px solid;
+    border-radius: 3px;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+@media screen and (max-width: 600px ) {
+    .container{
+        padding: 12px;
+    }
+    nav{
+        flex-direction: column
+    }
+    nav ul li{
+        font-size: 10px;
+    }
+    nav div img{
+        height: 18px;
+    }
+    nav div h1{
+        font-size: 15px;
+    }
+    
+}
